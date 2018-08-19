@@ -1,0 +1,50 @@
+\chapter{Задача 7}	
+
+
+	\begin{enumerate}
+	
+	
+	
+	\item Прямая $ y = -4x - 11 $ является касательной к графику функции $ y = x^3 + 7x^2 + 7x - 6 $. Найдите абсциссу точки касания.
+	
+	
+	
+	\item Прямая $ y = 7x - 5 $ параллельна касательной к графику функции $ y = x^2 + 6x - 8$. Найдите абсциссу точки касания.
+	
+	
+	
+	\item На рисунке изображен график функции $ y = f(x) $, определенной на интервале (-12; 8). Найдите количество решений уравнения $ f'(x) = 0 $ на отрезке [-8; 5].
+	
+	\resizebox{12cm}{6cm}
+	{
+		\begin{tikzpicture}
+		\begin{axis}[
+		enlarge x limits=false,
+		smooth,
+		enlarge x limits=false,
+		xshift=1,
+		xmin=-11,xmax=11,
+		ymin=-6,ymax=6,
+		grid=both,
+		axis lines=middle,
+		minor tick num=4,
+		enlargelimits={abs=1},
+		axis line style={latex-latex},
+		ticklabel style={font=\tiny,fill=white},
+		xlabel style={at={(ticklabel* cs:1)},anchor=north west},
+		ylabel style={at={(ticklabel* cs:1)},anchor=south west}
+		]
+		
+		\coordinate (O) at (0,0);
+		\node[fill=white,circle,inner sep=0pt] (O-label) at ($(O)+(-135:10pt)$) {$O$};
+		
+		\addplot coordinates 
+		{(-12,3) (-9,-3) (-7,4) (-3,-4) (-1,5) (2,2) (6,5) (8,-1)};
+		
+		\\closedcycle;
+		\end{axis}
+		\end{tikzpicture}
+		
+	}
+	
+	\end{enumerate}
